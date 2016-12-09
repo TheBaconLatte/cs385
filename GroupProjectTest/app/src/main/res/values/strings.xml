@@ -2,5 +2,5 @@
     <string name="app_name">GroupProjectTest</string>
     <string name="title">Notice Me Sensei!</string>
     <string name="instructions">Get your sensei to notice you! Attend classes and pay attention to what he says to gain his favour and get that sweet, sweet reference for your CV!</string>
-    <string name="greeting">Welcome to your class on LOLCODE!</string>
+    <string name="greeting">Welcome to your class on Java!</string>
 </resources>
