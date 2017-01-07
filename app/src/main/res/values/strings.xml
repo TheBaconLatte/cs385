@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Notice Me Sensai</string>
+    <string name="play">Play</string>
+    <string name="about">About</string>
+    <string name="notice_me_sensai">notice_me_sensai</string>
+    <string name="question">What memory size below is the largest?</string>
+    <string name="choice_1">1 kilobyte</string>
+    <string name="choice_2">100 bytes</string>
+    <string name="choice_3">4 terabytes</string>
+</resources>
