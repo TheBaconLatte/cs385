@@ -34,7 +34,7 @@
         android:id="@+id/phone_icon"
         android:padding="@dimen/activity_horizontal_margin"
         android:layout_gravity="center"
-        android:src="@drawable/notice_me_sensai"
+        android:src="@drawable/notice_me_sensei"
         android:contentDescription="@string/notice_me_sensai"
         android:layout_marginBottom="138dp"
         android:layout_above="@+id/btn_1"

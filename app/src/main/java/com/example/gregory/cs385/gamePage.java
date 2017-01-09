@@ -4,7 +4,9 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by gregory on 06/01/2017.
@@ -21,7 +23,18 @@ public class gamePage extends AppCompatActivity {
         ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#FFB6C1"));
         getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
-//        TextView textView = (TextView) findViewById(R.id.textView3);
-//        textView.setBackgroundColor(Color.parseColor("#80585858")); //text box
+
+    }
+
+    public void onClickChoice_1(View view) {
+        Toast.makeText(this, "Wrong! Try again", Toast.LENGTH_SHORT).show();
+    }
+
+    public void onClickChoice_2(View view) {
+        Toast.makeText(this, "Wrong! Try again", Toast.LENGTH_SHORT).show();
+    }
+
+    public void onClickChoice_3(View view) {
+        Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
     }
 }

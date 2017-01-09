@@ -1,6 +1,8 @@
 package com.example.gregory.cs385;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +12,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    DatabaseHelper myDb;
+    DatabaseHelper db;
+
     Button btn_1, btn_2;
 
     @Override
@@ -18,8 +21,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // setup database
-        myDb = new DatabaseHelper(this);
+        db = new DatabaseHelper(this);
+
+        // questions
+        db.insertData("What memory size is the largest?", "100 bytes", "1 kilobyte", "1 terabyte", "1 terabyte");
+        db.insertData("What does CPU stand for?", "Central Processing Unit", "Core Processor Unit", "Centre Power Utility", "Central Processing Unit");
+        db.insertData("Which is a programming language?", "Black Mamba", "Anaconda", "Python", "Python");
+        db.insertData("Which is the most popular OS?", "Windows", "Mac OSX", "Linux", "Windows");
+        db.insertData("What does a Control Panel do?", "Controls your computer", "For fun", "Change settings", "Controls your computer");
+        db.insertData("Which is the most popular search engine?", "Bing", "Google", "Yahoo", "Google");
+        db.insertData("What do you use to click things?", "Mouse", "Keyboard", "RAM", "Mouse");
+        db.insertData("What do you use to go online?", "Modem", "Mouse", "USB cable", "Modem");
+        db.insertData("DNS refers to?", "Domain Name Server", "Disk Numbering System", "Digital Network Service", "Domain Name Server");
+        db.insertData("What does WWW stand for?", "World Wide Web", "Weird Weather Warning", "Web Wide World", "World Wide Web");
 
         // change menu colour
         ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#FFB6C1"));
@@ -43,8 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
     }
-
-
 
 
 }

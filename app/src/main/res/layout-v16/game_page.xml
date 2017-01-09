@@ -27,25 +27,6 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/choice_3"
-
-        android:text="@string/choice_3"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-
-        android:layout_width="270dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="48dp"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:background="@drawable/question_box"
-        android:textAllCaps="false"
-        android:layout_below="@+id/choice_2"
-        android:layout_alignLeft="@+id/choice_2"
-        android:layout_alignStart="@+id/choice_2">
-
-    </Button>
-
-    <Button
         android:id="@+id/choice_1"
 
         android:text="@string/choice_1"
@@ -54,13 +35,14 @@
 
         android:layout_width="270dp"
         android:layout_height="60dp"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="198dp"
         style="@style/Widget.AppCompat.Button.Colored"
         android:background="@drawable/question_box"
         android:textAllCaps="false"
+        android:onClick="onClickChoice_1"
         android:layout_below="@+id/question"
-        android:layout_alignLeft="@+id/choice_2"
-        android:layout_alignStart="@+id/choice_2">
+        android:layout_alignLeft="@+id/choice_3"
+        android:layout_alignStart="@+id/choice_3">
 
     </Button>
 
@@ -73,12 +55,33 @@
 
         android:layout_width="270dp"
         android:layout_height="60dp"
-        android:layout_marginTop="50dp"
         style="@style/Widget.AppCompat.Button.Colored"
         android:background="@drawable/question_box"
         android:textAllCaps="false"
+        android:onClick="onClickChoice_2"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/choice_3"
+
+        android:text="@string/choice_3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="63dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/question_box"
+        android:textAllCaps="false"
+        android:onClick="onClickChoice_3"
         android:layout_below="@+id/choice_1"
-        android:layout_centerHorizontal="true">
+        android:layout_alignLeft="@+id/choice_2"
+        android:layout_alignStart="@+id/choice_2">
 
     </Button>
 

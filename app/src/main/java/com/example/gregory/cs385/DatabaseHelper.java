@@ -1,5 +1,6 @@
 package com.example.gregory.cs385;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -14,12 +15,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final String TABLE_NAME = "questions";
 
-    public static final String COL_1 = "ID";
-    public static final String COL_2 = "QUESTION";
-    public static final String COL_3 = "CHOICE_1";
-    public static final String COL_4 = "CHOICE_2";
-    public static final String COL_5 = "CHOICE_3";
-    public static final String COL_6 = "CORRECT_CHOICE";
+    public static final String QUESTION_COL = "QUESTION";
+    public static final String CHOICE_1_COL = "CHOICE_1";
+    public static final String CHOICE_2_COL = "CHOICE_2";
+    public static final String CHOICE_3_COL = "CHOICE_3";
+    public static final String CORRECT_CHOICE_COL = "CORRECT_CHOICE";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
@@ -37,4 +37,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS" + TABLE_NAME);
         onCreate(db);
     }
+
+    public boolean insertData(String question, String choice_1, String choice_2, String choice_3, String correct_choice) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(QUESTION_COL, question);
+        contentValues.put(CHOICE_1_COL, choice_1);
+        contentValues.put(CHOICE_2_COL, choice_2);
+        contentValues.put(CHOICE_3_COL, choice_3);
+        contentValues.put(CORRECT_CHOICE_COL, correct_choice);
+        long result = db.insert(TABLE_NAME, null, contentValues);
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
 }
+
