@@ -13,7 +13,7 @@ public class gamePage1 extends AppCompatActivity {
     Button next;
     int counter = 0;
     String dialogue[];
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,17 +21,20 @@ public class gamePage1 extends AppCompatActivity {
         final TextView textView = (TextView) findViewById(R.id.textView3);
         textView.setBackgroundColor(Color.parseColor("#80585858")); //text box with transparency
         next = (Button) findViewById(R.id.next);
-        loadDialogue();
+        loadDialogue(); //calling method that loads the dialogue
+        textView.setText(dialogue[counter]);
+        counter++;
 
         next.setOnClickListener(new View.OnClickListener(){ //button to proceed through dialogue
             public void onClick(View l){
 
-                textView.setText(dialogue[counter]);
+                textView.setText(dialogue[counter]); //sets current dialogue
+
                 if(counter < dialogue.length -1){
-                    counter++;
+                    counter++; //proceeds through dialogue array
                 }
                 else{
-                    counter=0;
+                    counter=0; //resets dialogue
                 }
             }
 
@@ -40,6 +43,6 @@ public class gamePage1 extends AppCompatActivity {
 
     public void loadDialogue(){
         Resources res = getResources();
-        dialogue = res.getStringArray(R.array.page1);
+        dialogue = res.getStringArray(R.array.page1); //loads dialogue from xml file to string array in java
     }
 }
