@@ -12,7 +12,6 @@
     tools:context="com.example.kerrie_ann.groupprojecttest.gamePage1">
 
     <TextView
-        android:text="@string/greeting"
         android:textSize="25dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -26,4 +25,13 @@
         android:layout_marginBottom="1dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/next"
+        android:id="@+id/next"
+        />
 </RelativeLayout>

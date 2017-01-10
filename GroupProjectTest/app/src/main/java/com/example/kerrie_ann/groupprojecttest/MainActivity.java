@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             public void onClick(View arg0) {
                     Intent openGame = new Intent(MainActivity.this, gamePage1.class);
-                    startActivity(openGame);
+                    startActivity(openGame); //opens the first page of the game
                 }
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent instruc = new Intent(MainActivity.this, instructions.class);
-                startActivity(instruc);
+                startActivity(instruc); //opens instructions page
             }
         });
     }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="page1">
+        <item>Welcome to your class on Java Programming!</item>
+        <item>Here you will learn the basics on programming.</item>
+        <item>Now, lets begin!</item>
+    </string-array>
+</resources>
