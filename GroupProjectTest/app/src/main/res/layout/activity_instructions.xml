@@ -30,4 +30,13 @@
         android:textSize="17sp"
         android:id="@+id/textView"
         android:gravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/play"
+        android:textAllCaps="false"
+        android:id="@+id/play"/>
 </RelativeLayout>
