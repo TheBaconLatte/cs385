@@ -1,6 +1,8 @@
 package com.example.kerrie_ann.groupprojecttest;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button button, button2;
+    MediaPlayer my_mediaPlayer;
 
 
     @Override
@@ -31,8 +34,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(instruc); //opens instructions page
             }
         });
+
+        my_mediaPlayer = MediaPlayer.create(this, R.raw.nms_theme);
+        my_mediaPlayer.start();
+
+        Thread timer = new Thread(){
+            public void run(){
+                try{
+                    sleep(10200);
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+        };
+        timer.start();
     }
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+        my_mediaPlayer.release();
+        finish();
+    }
     @Override
     public void onClick(View view) {
 

@@ -1,5 +1,6 @@
 package com.example.kerrie_ann.groupprojecttest;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +14,7 @@ public class gamePage1 extends AppCompatActivity {
     Button next;
     int counter = 0;
     String dialogue[];
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,13 +29,13 @@ public class gamePage1 extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener(){ //button to proceed through dialogue
             public void onClick(View l){
 
-                textView.setText(dialogue[counter]); //sets current dialogue
-
-                if(counter < dialogue.length -1){
+                if(counter < dialogue.length){
+                    textView.setText(dialogue[counter]); //sets current dialogue
                     counter++; //proceeds through dialogue array
                 }
                 else{
-                    counter=0; //resets dialogue
+                    Intent home = new Intent(gamePage1.this, house.class);
+                    startActivity(home);
                 }
             }
 

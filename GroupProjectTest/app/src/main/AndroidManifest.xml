@@ -20,8 +20,11 @@
         <activity
             android:name=".gamePage1"
             android:screenOrientation="landscape" />
-        <activity android:name=".instructions"
-            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".instructions"
+            android:screenOrientation="landscape" />
+        <activity android:name=".house"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
