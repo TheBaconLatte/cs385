@@ -23,7 +23,7 @@ public class gamePage1 extends AppCompatActivity {
         textView.setBackgroundColor(Color.parseColor("#80585858")); //text box with transparency
         next = (Button) findViewById(R.id.next);
         loadDialogue(); //calling method that loads the dialogue
-        textView.setText(dialogue[counter]);
+        textView.setText(dialogue[counter]); //begins on the first element of array
         counter++;
 
         next.setOnClickListener(new View.OnClickListener(){ //button to proceed through dialogue
@@ -34,7 +34,7 @@ public class gamePage1 extends AppCompatActivity {
                     counter++; //proceeds through dialogue array
                 }
                 else{
-                    Intent home = new Intent(gamePage1.this, house.class);
+                    Intent home = new Intent(gamePage1.this, house.class); //when dialogue is finished, button brings user to next page
                     startActivity(home);
                 }
             }

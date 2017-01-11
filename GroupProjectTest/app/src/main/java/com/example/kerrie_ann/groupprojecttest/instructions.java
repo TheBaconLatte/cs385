@@ -18,7 +18,7 @@ public class instructions extends AppCompatActivity {
         Button play = (Button) findViewById(R.id.play);
 
         play.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View z){
+            public void onClick(View z){ //button that brings the user straight to the game
                 Intent play = new Intent(instructions.this, gamePage1.class);
                 startActivity(play);
 
