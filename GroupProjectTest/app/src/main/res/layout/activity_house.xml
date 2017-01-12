@@ -13,14 +13,14 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
+        android:layout_height="35dp"
+        android:padding="5dp"
         android:text="@string/choice"
         android:layout_centerHorizontal="true"
         android:background="#D3D3D3"
         android:textSize="15dp"
         android:gravity="center"
-        android:textColor="#000000"
-        />
+        android:textColor="#000000" />
 
     <Button
         android:layout_width="match_parent"

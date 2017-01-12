@@ -9,17 +9,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-//this file will display the first page of the game
-public class gamePage1 extends AppCompatActivity {
+public class gamePage2 extends AppCompatActivity {
     Button next;
-    int counter = 0;
     String dialogue[];
-
+    int counter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_page1);
+        setContentView(R.layout.activity_game_page2);
+
         final TextView textView = (TextView) findViewById(R.id.textView3);
         textView.setBackgroundColor(Color.parseColor("#80585858")); //text box with transparency
         next = (Button) findViewById(R.id.next);
@@ -35,19 +34,18 @@ public class gamePage1 extends AppCompatActivity {
                     counter++; //proceeds through dialogue array
                 }
                 else{
-                    house d = new house(); //creates instance of house class
-                    d.setDay(2); //sets day to 2 once dialogue is finished
-                    Intent home = new Intent(gamePage1.this, house.class); //when dialogue is finished, button brings user to next page
+                    house d = new house(); //creates instance of main class
+                    d.setDay(3); //sets day to 3 once dialogue is finished
+                    Intent home = new Intent(gamePage2.this, house.class); //when dialogue is finished, button brings user to next page
                     startActivity(home);
                 }
             }
 
         });
-
     }
 
     public void loadDialogue(){
         Resources res = getResources();
-        dialogue = res.getStringArray(R.array.page1); //loads dialogue from xml file to string array in java
+        dialogue = res.getStringArray(R.array.page2); //loads dialogue from xml file to string array in java
     }
 }

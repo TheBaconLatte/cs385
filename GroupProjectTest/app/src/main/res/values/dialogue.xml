@@ -5,4 +5,9 @@
         <item>Here you will learn the basics on programming.</item>
         <item>Now, lets begin!</item>
     </string-array>
+
+    <string-array name="page2">
+        <item>Test1</item>
+        <item>Test2</item>
+    </string-array>
 </resources>

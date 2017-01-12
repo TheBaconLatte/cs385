@@ -5,7 +5,7 @@
     <string name="instructions">Get your sensei to notice you! Attend classes and pay attention to what he says to gain his favour and get that sweet, sweet reference for your CV!</string>
     <string name="greeting">Welcome to your class on Java!</string>
     <string name="next">Next</string>
-    <string name="choice">Should I bother going to class or just stay home and study?</string>
+    <string name="choice">A new day!  Should I bother going to class or just stay home and study?</string>
     <string name="home">Stay at home</string>
     <string name="school">Go to class</string>
 </resources>

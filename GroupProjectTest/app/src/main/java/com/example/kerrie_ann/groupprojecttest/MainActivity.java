@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button button, button2;
     MediaPlayer my_mediaPlayer;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
         my_mediaPlayer = MediaPlayer.create(this, R.raw.nms_theme);
-        my_mediaPlayer.start();
+        my_mediaPlayer.start(); //automatically plays music on splash screen
 
         Thread timer = new Thread(){
             public void run(){
@@ -60,4 +59,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
     }
+
 }
