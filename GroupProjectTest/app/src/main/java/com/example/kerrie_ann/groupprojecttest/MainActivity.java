@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button button, button2;
     MediaPlayer my_mediaPlayer;
+    int day=2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

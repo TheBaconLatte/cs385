@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 //this file will display the first page of the game
 public class gamePage1 extends AppCompatActivity {
@@ -26,6 +27,8 @@ public class gamePage1 extends AppCompatActivity {
         loadDialogue(); //calling method that loads the dialogue
         textView.setText(dialogue[counter]); //begins on the first element of array
         counter++;
+        house d = new house(); //creates instance of house class
+        d.setDay(2); //sets day to 2
 
         next.setOnClickListener(new View.OnClickListener(){ //button to proceed through dialogue
             public void onClick(View l){
@@ -35,8 +38,6 @@ public class gamePage1 extends AppCompatActivity {
                     counter++; //proceeds through dialogue array
                 }
                 else{
-                    house d = new house(); //creates instance of house class
-                    d.setDay(2); //sets day to 2 once dialogue is finished
                     Intent home = new Intent(gamePage1.this, house.class); //when dialogue is finished, button brings user to next page
                     startActivity(home);
                 }
