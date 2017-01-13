@@ -38,10 +38,14 @@ public class house extends AppCompatActivity {
                         startActivity(day3);
                     } else if (day == 3) {
                         setDay(4);
-                        Intent day4 = new Intent(house.this, house.class); //restarts the class for next day
+                        Intent day4 = new Intent(house.this, house.class);
+                        startActivity(day4); //restarts the class for next day
                     } else if (day == 4) {
                         setDay(5);
-                        //insert code to redirect to day 5. User must attend day 5 to take test
+                        Intent day5 = new Intent(house.this, house.class);
+                        startActivity(day5);
+                    } else if (day == 5){
+                       Toast.makeText(getApplicationContext(), "Skip the last day and miss the test? I can't do that or I'll never get my reference!", Toast.LENGTH_LONG).show();
                     }
 
                 }
@@ -58,6 +62,8 @@ public class house extends AppCompatActivity {
                         //insert code to lead to day 3
                     } else if (day == 4) {
                         //insert code to lead to day 4
+                    } else if (day == 5) {
+                        //insert code to lead to day 5
                     }
                 }
             });
