@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Class Quiz</string>
+    <string name="score0">oh god no</string>
+    <string name="score1">1/10. Failed. You should have studied.</string>
+    <string name="score2">2/10. Not good enough! You\'ve failed!</string>
+    <string name="score3">How upsetting. Do well next time. Failed.</string>
+    <string name="score4">4/10. You\'ve barely passed.</string>
+    <string name="score5">More study should be done. You\'ve passed.</string>
+    <string name="score6">6/10! You could do better but you pass.</string>
+    <string name="score7">7/10. Do a bit more study but you\'ve passed.</string>
+    <string name="score8">8/10. A very good result!</string>
+    <string name="score9">I\'m impressed. An outstanding grade!</string>
+    <string name="score10">Wow! A programming genius! Excellent result!</string>
+</resources>
