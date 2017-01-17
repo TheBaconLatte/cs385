@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notes">
+        <item>day2</item>
+        <item>dayy2</item>
+        <item>dayyy2</item>
+        <item>day3</item>
+        <item>dayy3</item>
+        <item>day4</item>
+        <item>dayy4</item>
+        <item>dayyy4</item>
+    </string-array>
+</resources>
