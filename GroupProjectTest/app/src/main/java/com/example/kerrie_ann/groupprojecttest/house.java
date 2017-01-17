@@ -28,14 +28,14 @@ public class house extends AppCompatActivity {
         Button stay = (Button) findViewById(R.id.stay);
         Button school = (Button) findViewById(R.id.school);
         day = getDay(); //calls the getter method to get current day
-        Toast.makeText(this, "Day " + day, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Day " + day, Toast.LENGTH_SHORT).show(); //informs user what day it is
 
             stay.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View m) {
                    if (day == 2) {
                         setDay(3);
-                        Intent day3 = new Intent(house.this, house.class); //restarts the class with update
-                        startActivity(day3);
+                        Intent day3 = new Intent(house.this, house.class);
+                        startActivity(day3);//restarts the class with update
                     } else if (day == 3) {
                         setDay(4);
                         Intent day4 = new Intent(house.this, house.class);
@@ -43,9 +43,10 @@ public class house extends AppCompatActivity {
                     } else if (day == 4) {
                         setDay(5);
                         Intent day5 = new Intent(house.this, house.class);
-                        startActivity(day5);
+                        startActivity(day5);//restarts the class for next day
                     } else if (day == 5){
                        Toast.makeText(getApplicationContext(), "Skip the last day and miss the test? I can't do that or I'll never get my reference!", Toast.LENGTH_LONG).show();
+                        //user cannot skip the last day
                     }
 
                 }
