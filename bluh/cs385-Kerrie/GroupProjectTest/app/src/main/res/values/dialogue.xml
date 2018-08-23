@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="page1">
+        <item>Welcome to your class on Java Programming!</item>
+        <item>Here you will learn the basics on programming.</item>
+        <item>Now, lets begin!</item>
+    </string-array>
+
+    <string-array name="page2">
+        <item>Test1</item>
+        <item>Test2</item>
+    </string-array>
+
+    <string-array name="page3">
+        <item>Test3</item>
+        <item>Test4</item>
+    </string-array>
+
+    <string-array name="page4">
+        <item>Test5</item>
+        <item>Test6</item>
+    </string-array>
+
+    <string-array name="page5">
+        <item>Test passed</item>
+        <item>I guess</item>
+        <item>\'nother test</item>
+        <item>mreeehhh</item>
+    </string-array>
+</resources>

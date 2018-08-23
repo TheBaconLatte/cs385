@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="page1">
+        <item>Welcome to your class on Java Programming!</item>
+        <item>Here you will learn the basics on programming.</item>
+        <item>Now, lets begin!</item>
+        <item>Java is an Object Oriented Programming (OOP) language.</item>
+        <item>This means it is made up of different objects, or classes.</item>
+        <item>Each class has its own attributes and methods, i.e. what it is and what it does.</item>
+        <item>For example, a \"dog\" class might have the attributes \"name\" and \"breed\", and the methods \"bark\" and \"roll over\".</item>
+        <item>We won\'t cover classes this week, but it\'s important to understand what object oriented programming means.</item>
+        <item>The first java program you will learn how to code looks like this:</item>
+        <item>\t\tpublic class Example {\n\t\t\t\tpublic static void main(String args[]) {\n\t\t\t\t\t\tSystem.out.print(\"Hello World!\");\n\t\t\t\t}\n\t\t}</item>
+        <item>This will simply print Hello World! to the screen. Let\'s look at it line by line though.</item>
+        <item>\t\tpublic class Example \nIn this line, you are creating the class called Example. It is very important that your classname is the same as your filename. Here, our file would be called Example.java.</item>
+        <item>\t\tpublic static void main(String args[]) \nWe do not need to understand every word of this yet. This is called the entry point of the application. </item>
+        <item>It also creates the main method. When the program is run, this is the first place that is accessed.</item>
+        <item>\t\tSystem.out.print(\"Hello World!\"); \nThis line is made up of three important elements: a print statement, a string and a semi-colon. </item>
+        <item>System.out.print() is the command used to print a piece of information to the screen.</item>
+        <item>This can be a fixed string like \"Hello World!\" or a variable stored in the program. We\'ll learn more about variables tomorrow.</item>
+        <item>\"Hello World!\" is a string. A string is any word, sentence, or series of characters that a program must store. \"@~:^$\" is also a string.</item>
+        <item>Finally, every command must end with a semi-colon (;) in Java. This marks the end of a statement.</item>
+        <item>We don\'t use semi-colons after the class and method creations because we are not finished with them. Everything under those lines are still within the class Example and main method.</item>
+        <item>Anyway, that\'s probably enough of an introduction for today, I don\'t want to fry your brains just yet.</item>
+        <item>Remember to be here bright and early for class tomorrow and I\'ll see you all then!</item>
+    </string-array>
+
+    <string-array name="page2">
+        <item>Today we\'ll talk more about declaring variables and data types</item>
+        <item>Java is made up of <b>data types</b>, which can be primitive or non-primitive.</item>
+        <item>There are 8 primitive data types: byte, short, int, long, float, double, char and boolean.</item>
+        <item>We will only look at ints, floats, doubles, chars, and booleans.</item>
+        <item><b>Ints</b>  are integers, i.e. a whole number. For example, 5 can be an int.</item>
+        <item><b>Floats</b> and <b>doubles</b> are decimals. Examples include 3.14, 6.7, or 9.0.</item>
+        <item><b>Chars</b> are characters. These can be letters or any other single character expression. For example, @ is a character.</item>
+        <item><b>Booleans</b> are conditions. They can only be true or false. For example (1>2) would be false as a boolean as 1 is not greater than two.</item>
+        <item>Non-primitive data types are a little more complicated. These include strings and arrays.</item>
+        <item>Strings are words or sentences, for example, \"hello world!\" is a string.</item>
+        <item>Arrays are series of other data types. 1, 2, 3, 4 could be an array of ints. Storing them like this can be very useful when working with them.</item>
+        <item>To declare a primitive data type, we use the notation\n\t\t&lt;datatype> &lt;name> = &lt;value>;</item>
+        <item>So to declare an integer 10 called "x", we would write\n\t\tint x = 10;</item>
+        <item>or to declare a boolean called "found" as false:\n\t\tboolean found = false;</item>
+        <item>Remember, a variable name cannot contain any spaces or most special characters.</item>
+        <item>It also cannot be certain keywords, including the names of primitive data types. For example, \"int\" is not a valid variable name.</item>
+        <item>We can also declare a data type with no value, if we don\'t know the value upon creation. We create and later set this like so:</item>
+        <item>\t\tint x;\n\t\t&lt;additional code>\n\t\tx = &lt;value>;</item>
+        <item>This is useful if we need extra code to figure out the value, such as with keyboard input.</item>
+    </string-array>
+
+    <string-array name="page3">
+        <item>Today we\'ll be looking at arithmetic and relational operators!</item>
+        <item>Arithmetic operators are straightforward, as they are the same as in mathematics. The ones we will be looking at are +, -, *, /, \%%, ++, and --.</item>
+        <item>+ is the addition operator, i.e. to add multiple numbers together. For example, 3+1==4.</item>
+        <item>- is the subtraction operator, i.e. to take one number from another. For example, 3-1==2.</item>
+        <item>* is the multiplication operator, i.e. to multiply multiple numbers by each other. For example, 6*2==12.</item>
+        <item>/ is the division operator, i.e. to divide one number by another. For example, 6/2==3.</item>
+        <item>All of these should be reasonably familiar from school.</item>
+        <item>\%% is slightly different. This is the modulus operator, and gives the remainder after dividing one number by another.</item>
+        <item>For example, 10\%%3==1, because 10/3==3 with a remainder of 1.</item>
+        <item>One handy application of this is determining whether a number (called x) is odd or even. If x\%%2==1, the number is odd, but if x\%%2==0, the number is even.</item>
+        <item>We will look at this example again tomorrow, when we look at if statements.</item>
+        <item>++ and -- are the increment and decrement operators respectively.</item>
+        <item>Incrementing a number means adding 1 to it, while decrementing means subtracting 1.</item>
+        <item>For example, 4++==5 and 4--==3.</item>
+        <item>We will now look at relational operators, including one I\'ve already used several times, ==.</item>
+        <item>== is the \"is equal to\" operator. This is used when we are checking whether two given data types are the same.</item>
+        <item>This is used not just with numbers, but also with chars and booleans.</item>
+        <item>This is NOT the same as =, which is an assignment operator. This is used when changing the value of a variable, e.g. x=3.</item>
+        <item>Other relational operators include !=, >, &lt;, >=, and &lt;=.</item>
+        <item>!= is the \"is not equal to\" operator, and is the opposite of ==. It determines if two variables are different.</item>
+        <item>For example, 3!=4 because 3 is not equal to 4.</item>
+        <item>> and &lt; are \"greater than\" and \"less than\" operators and work the same as in mathematics, e.g. 4>3 and 3&lt;4.</item>
+        <item>>= and &lt;= are \"greater than or equal to\" and \"less than or equal to\" operators respectively.</item>
+        <item>They work in the same way as > and &lt; except they also include numbers that are equal. So 4>=3 and 4>=4.</item>
+        <item>And that is all the operators we will be covering!</item>
+        <item>I hope you\'ve all been taking notes as they are sure to come up on the the test on Friday.</item>
+        <item>See you all tomorrow!</item>
+    </string-array>
+
+    <string-array name="page4">
+        <item>We\'re covering our last topic today and it\'s one of my favourites: decision making and loops.</item>
+        <item>I\'ll make today\'s class quick so you can all go home and study your notes for tomorrow\'s test.</item>
+        <item>Starting with decision making: the method we will be looking at uses \"if\" statements.</item>
+        <item>These basically say \"if one condition occurs, do this. Otherwise, do that\".</item>
+        <item>The syntax for if statements is relatively easy to understand.</item>
+        <item>\t\tif(&lt;condition1>)
+\n\t\t\t\t&lt;statement1>;
+\n\t\telse
+\n\t\t\t\t&lt;statement2>;</item>
+        <item>Let\'s look at our odd number example from yesterday:</item>
+        <item>\t\tif(x\%%2==1)
+\n\t\t\t\tSystem.out.print("number is odd");
+\n\t\telse if(x\%%==0)
+\n\t\t\t\tSystem.out.print("number is even");</item>
+        <item>Here we used what is called an \"else if\". This simply adds an extra option for the machine. You can include as many else ifs as you want.</item>
+        <item>We also did not include an else statement. This is because the only options are odd number, even number, or error. </item>
+        <item>If we don\'t include an else statement, and none of the if statements apply, the machine simply does nothing and continues.</item>
+        <item>Moving onto loops, today we\'ll look at while and for loops.</item>
+        <item>Loops simply repeat an action again and again until a given condition does not apply anymore.</item>
+        <item>For example, until a counter reaches a certain number.</item>
+        <item>While loops have an easier syntax, so we\'ll start with them:</item>
+        <item>\t\twhile(&lt;condition>)
+\n\t\t\t\t&lt;statement>;</item>
+        <item>For example, if you want to print 5 *s to screen, you can use a while loop and a counter:</item>
+        <item>\t\tint counter = 0;
+\n\t\twhile(counter &lt; 5) {
+\n\t\t\t\tSystem.out.print("*");
+\n\t\t\t\tcounter++;
+\n\t\t}</item>
+        <item>We use { } with the while loop because there are multiple lines of actions occurring within them. If there were only one line, we would not need the brackets.</item>
+        <item>This was seen in the if/else example, and we\'ll see now in the for loop example.</item>
+        <item>For loops have a slightly more complicated syntax:</item>
+        <item>\t\tfor(&lt;initialisation>; &lt;condition>; &lt;update>)
+\n\t\t\t\t&lt;statement>;</item>
+        <item>Although it looks complicated, it\'s not too difficult. For loops simply incorporate more into their definitive structure than while loops.</item>
+        <item>For example, we had to initialise a counter outside of the while loop in the example. This is done within the for loop.</item>
+        <item>Here\'s the * example with a for loop instead:</item>
+        <item>\t\tfor(int counter = 0; counter &lt; 5; counter++)
+\n\t\t\t\tSystem.out.print("*");</item>
+        <item>Here, the counter starts as 0, checks if 0 is less than 5, prints a * then increments counter to 1. Then it checks if 1 is less than 5, prints a * and increments again to 2.</item>
+        <item>This continues until counter is incremented to 5. It then checks if 5 is less than 5, which it is not. </item>
+        <item>This means the condition is false, so it exits the loop and continues through the code.</item>
+        <item>So that concludes our final day of class!</item>
+        <item>Tomorrow is the big test, so make sure you\'re all here and ready for it.</item>
+    </string-array>
+
+    <string-array name="page5">
+        <item>Today\'s the day!</item>
+        <item>I won\'t keep you waiting anymore. I hope you all did your study last night.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Notice Me Sensei!</string>
+    <string name="title">Notice Me Sensei!</string>
+    <string name="play">Play</string>
+    <string name="instructions">Get your sensei to notice you! Attend classes and pay attention to what he says to gain his favour and get that sweet, sweet reference for your CV!</string>
+    <string name="greeting">Welcome to your class on Java!</string>
+    <string name="next">Next</string>
+    <string name="choice">A new day!  Should I bother going to class or just stay home and study?</string>
+    <string name="home">Stay at home</string>
+    <string name="school">Go to class</string>
+
+    <string name="attend1">Final Attendance: 40% \nPoor attendance</string>
+    <string name="attend2">Final Attendance: 60% \nYou should have turned up for more class</string>
+    <string name="attend3">Final Attendance: 80% \nWonderful attendance</string>
+    <string name="attend4">Final Attendance: 100% \nPerfect attendance!</string>
+
+    <string name="score0">Final Grade: 0% \noh god no</string>
+    <string name="score1">Final Grade: 10% \nFailed. You should have studied.</string>
+    <string name="score2">Final Grade: 20% \nNot good enough! You\'ve failed!</string>
+    <string name="score3">Final Grade: 30% \nHow upsetting. Do well next time. Failed.</string>
+    <string name="score4">Final Grade: 40% \nYou\'ve barely passed.</string>
+    <string name="score5">Final Grade: 50% \nMore study should be done. You\'ve passed.</string>
+    <string name="score6">Final Grade: 60% \nYou could do better but you pass.</string>
+    <string name="score7">Final Grade: 70% \nDo a bit more study but you\'ve passed.</string>
+    <string name="score8">Final Grade: 80% \nA very good result!</string>
+    <string name="score9">Final Grade: 90% \nI\'m impressed. An outstanding grade!</string>
+    <string name="score10">Final Grade: 100% \nWow! A programming genius! Excellent result!</string>
+
+    <string name="ref1">I\'m sorry, but due to your poor grades and attendance, I cannot give you a reference for your CV</string>
+    <string name="ref2">Your attendance has been great, but I\'m afraid your grades are not good enough for a reference from me</string>
+    <string name="ref3">I wish I could give you a reference, but I\'m afraid your grades and attendance just aren\'t good enough</string>
+    <string name="ref4">Your final grades are wonderful. However, your attendance is so poor that I cannot give you a reference</string>
+    <string name="ref5">Despite your poor attendance, I will give you a reference due to your perfect grade</string>
+    <string name="ref6">I wouldn\'t usually give a reference for a mark this low, but since your attendance is so good, I will</string>
+    <string name="ref7">Wonderful marks and wonderful attendance! Of course I\'ll give you a reference!</string>
+</resources>
